@@ -2,13 +2,16 @@ import React from 'react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Sidebar from './sidebar';
 import Mobilemenu from './mobilemenu';
+import { Menu } from 'lucide-react';
 
 const Header = () => {
   return (
-    <div className='w-full p-4 flex items-center justify-between bg-white'>
+    <div className='p-4 flex items-center justify-between bg-white'>
       <div className='sm:hidden flex items-center'>
         <Sheet>
-          <SheetTrigger>Open</SheetTrigger>z
+          <SheetTrigger>
+            <Menu />
+          </SheetTrigger>
           <SheetContent>
             <Mobilemenu />
           </SheetContent>

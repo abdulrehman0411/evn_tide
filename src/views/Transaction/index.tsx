@@ -33,7 +33,7 @@ import TransactionForm from '@/components/ui/form';
 const Transactions = () => {
   return (
     <div>
-      <div className='p-4 flex items-center justify-between overflow-hidden'>
+      <div className='p-4 flex items-center justify-between'>
         <div className='ml-4 mt-2 h-12 rounded-xl flex gap-4 items-center'>
           <DatePickerDemo />
           <Select>
@@ -92,7 +92,7 @@ const Transactions = () => {
         </div>
       </div>
       <div className='ml-4 mt-2 mr-4'>
-        <div className='w-full max-w-full overflow-x-hidden'>
+        <div className='w-full max-w-full overflow-auto'>
           <Table className='table-auto w-full'>
             <TableHeader>
               <TableRow>

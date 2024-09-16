@@ -314,9 +314,7 @@ const Mobilemenu = () => {
               >
                 <Link
                   className={`flex items-center rounded-lg px-3 py-2 $`}
-                  href={{
-                    pathname: '/support',
-                  }}
+                  href='/support'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

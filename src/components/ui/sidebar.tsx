@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
   return (
     <div className=''>
       <aside
-        className={`sm:block hidden float-left relative flex h-screen transition-all duration-300 ease-in-out ${isSidebarOpen ? 'w-64' : 'w-20'} flex-col overflow-y-auto border-r bg-white px-5 py-8`}
+        className={`sm:block hidden float-left relative h-screen transition-all duration-300 ease-in-out ${isSidebarOpen ? 'w-64' : 'w-20'} flex-col overflow-y-auto border-r bg-white px-5 py-8`}
       >
         {/* Toggle Button */}
         <button
