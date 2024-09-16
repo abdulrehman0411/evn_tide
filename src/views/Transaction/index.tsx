@@ -93,40 +93,54 @@ const Transactions = () => {
       </div>
       <div className='ml-9 mt-2 mr-9'>
         <Table>
-          <TableHeader className=''>
+          <TableHeader>
             <TableRow>
-              <TableHead>TO</TableHead>
-              <TableHead>TRANSACTION ID</TableHead>
-              <TableHead>DATE</TableHead>
-              <TableHead>TIME</TableHead>
-              <TableHead>COIN</TableHead>
-              <TableHead>AMOUNT</TableHead>
-              <TableHead>STATUS</TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                TO
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                TRANSACTION ID
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                DATE
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                TIME
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                COIN
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                AMOUNT
+              </TableHead>
+              <TableHead className='whitespace-normal break-words text-left'>
+                STATUS
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {invoices &&
               invoices.map(invoice => (
                 <TableRow key={invoice.transactionid}>
-                  <TableCell className='font-medium text-base'>
+                  <TableCell className='font-medium text-base break-words'>
                     {invoice.name}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.transactionid}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.date}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.time}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.coin}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.amount}
                   </TableCell>
-                  <TableCell className='font-normal text-base'>
+                  <TableCell className='font-normal text-base break-words'>
                     {invoice.status}
                   </TableCell>
                 </TableRow>
