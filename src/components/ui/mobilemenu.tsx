@@ -9,7 +9,7 @@ const Mobilemenu = () => {
     <div>
       <div className=''>
         <aside
-          className={`float-left relative flex h-screen transition-all duration-300 ease-in-out w-64 flex-col overflow-y-auto border-r bg-white px-5 py-8`}
+          className={`float-left relative flex h-screen transition-all duration-300 ease-in-out w-64 flex-col overflow-y-auto bg-white px-5 py-8`}
         >
           {/* Toggle Button */}
 

@@ -35,7 +35,7 @@ const Support = () => {
     <div>
       <div className='sm:hidden flex w-full'>
         <Sheet>
-          <SheetTrigger className='ml-9 mt-4 flex items-center bg-indigo-800 text-white p-3 rounded-lg'>
+          <SheetTrigger className='w-full m-3 flex items-center justify-center bg-indigo-800 text-white p-3 rounded-lg'>
             Chat Support
           </SheetTrigger>
           <SheetContent className='overflow-y-auto'>
@@ -44,7 +44,7 @@ const Support = () => {
         </Sheet>
       </div>
       <div className='flex flex-row gap-1'>
-        <div className='ml-8 mt-7 rounded-xl mr-2 float-left items-center p-4 bg-white w-full'>
+        <div className='sm:ml-7 ml-2 mt-7 rounded-xl mr-2 float-left items-center p-4 bg-white w-full'>
           <div className='flex flex-col gap-4 '>
             <h1 className='text-4xl font-semibold'>FAQs</h1>
             <Accordion

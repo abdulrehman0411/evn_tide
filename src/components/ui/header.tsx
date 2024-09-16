@@ -7,7 +7,7 @@ import { Menu } from 'lucide-react';
 const Header = () => {
   return (
     <div className='p-4 flex items-center justify-between bg-white'>
-      <div className='sm:hidden flex items-center'>
+      <div className='sm:hidden flex items-center '>
         <Sheet>
           <SheetTrigger>
             <Menu />
