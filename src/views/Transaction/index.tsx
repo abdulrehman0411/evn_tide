@@ -91,62 +91,64 @@ const Transactions = () => {
           </Dialog>
         </div>
       </div>
-      <div className='ml-9 mt-2 mr-9'>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className='whitespace-normal break-words text-left'>
-                TO
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                TRANSACTION ID
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                DATE
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                TIME
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                COIN
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                AMOUNT
-              </TableHead>
-              <TableHead className='whitespace-normal break-words text-left'>
-                STATUS
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {invoices &&
-              invoices.map(invoice => (
-                <TableRow key={invoice.transactionid}>
-                  <TableCell className='font-medium text-base break-words'>
-                    {invoice.name}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.transactionid}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.date}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.time}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.coin}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.amount}
-                  </TableCell>
-                  <TableCell className='font-normal text-base break-words'>
-                    {invoice.status}
-                  </TableCell>
-                </TableRow>
-              ))}
-          </TableBody>
-        </Table>
+      <div className='ml-9 mt-2 mr-9 sm:ml-4 sm:mr-4'>
+        <div className='w-full overflow-x-auto'>
+          <Table className='table-auto w-full min-w-full sm:min-w-[640px]'>
+            <TableHeader>
+              <TableRow>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  TO
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  TRANSACTION ID
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  DATE
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  TIME
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  COIN
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  AMOUNT
+                </TableHead>
+                <TableHead className='whitespace-nowrap px-2 py-3 text-left'>
+                  STATUS
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {invoices &&
+                invoices.map(invoice => (
+                  <TableRow key={invoice.transactionid}>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.name}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.transactionid}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.date}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.time}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.coin}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.amount}
+                    </TableCell>
+                    <TableCell className='whitespace-nowrap px-2 py-3'>
+                      {invoice.status}
+                    </TableCell>
+                  </TableRow>
+                ))}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </div>
   );
