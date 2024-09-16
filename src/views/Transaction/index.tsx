@@ -91,38 +91,53 @@ const Transactions = () => {
           </Dialog>
         </div>
       </div>
-      <div className="ml-4 mt-2 mr-4">
-  <div className="w-full max-w-full overflow-hidden">
-    <Table className="table-auto w-full">
-      <TableHeader>
-        <TableRow>
-          <TableHead className="px-2 py-3 text-left">TO</TableHead>
-          <TableHead className="px-2 py-3 text-left">TRANSACTION ID</TableHead>
-          <TableHead className="px-2 py-3 text-left">DATE</TableHead>
-          <TableHead className="px-2 py-3 text-left">TIME</TableHead>
-          <TableHead className="px-2 py-3 text-left">COIN</TableHead>
-          <TableHead className="px-2 py-3 text-left">AMOUNT</TableHead>
-          <TableHead className="px-2 py-3 text-left">STATUS</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {invoices &&
-          invoices.map(invoice => (
-            <TableRow key={invoice.transactionid}>
-              <TableCell className="px-2 py-3 truncate">{invoice.name}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.transactionid}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.date}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.time}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.coin}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.amount}</TableCell>
-              <TableCell className="px-2 py-3 truncate">{invoice.status}</TableCell>
-            </TableRow>
-          ))}
-      </TableBody>
-    </Table>
-  </div>
-</div>
-
+      <div className='ml-4 mt-2 mr-4'>
+        <div className='w-full max-w-full overflow-x-hidden'>
+          <Table className='table-auto w-full'>
+            <TableHeader>
+              <TableRow>
+                <TableHead className='px-2 py-3 text-left'>TO</TableHead>
+                <TableHead className='px-2 py-3 text-left'>
+                  TRANSACTION ID
+                </TableHead>
+                <TableHead className='px-2 py-3 text-left'>DATE</TableHead>
+                <TableHead className='px-2 py-3 text-left'>TIME</TableHead>
+                <TableHead className='px-2 py-3 text-left'>COIN</TableHead>
+                <TableHead className='px-2 py-3 text-left'>AMOUNT</TableHead>
+                <TableHead className='px-2 py-3 text-left'>STATUS</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {invoices &&
+                invoices.map(invoice => (
+                  <TableRow key={invoice.transactionid}>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.name}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.transactionid}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.date}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.time}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.coin}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.amount}
+                    </TableCell>
+                    <TableCell className='px-2 py-3 text-left'>
+                      {invoice.status}
+                    </TableCell>
+                  </TableRow>
+                ))}
+            </TableBody>
+          </Table>
+        </div>
+      </div>
     </div>
   );
 };
