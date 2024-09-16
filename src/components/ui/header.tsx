@@ -5,7 +5,7 @@ import Mobilemenu from './mobilemenu';
 
 const Header = () => {
   return (
-    <div className='p-4 flex items-center justify-between bg-white overflow-hidden'>
+    <div className='w-full p-4 flex items-center justify-between bg-white'>
       <div className='sm:hidden flex items-center'>
         <Sheet>
           <SheetTrigger>Open</SheetTrigger>z
