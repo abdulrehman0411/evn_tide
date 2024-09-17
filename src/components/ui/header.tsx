@@ -4,10 +4,7 @@ import Sidebar from './sidebar';
 import Mobilemenu from './mobilemenu';
 import { Menu } from 'lucide-react';
 
-interface props{
-  pathName:string;
-}
-const Header:React.FC<props> = (pathName) => {
+const Header: React.FC = () => {
   return (
     <div className='p-4 flex items-center justify-between bg-white'>
       <div className='sm:hidden flex items-center '>
@@ -21,7 +18,7 @@ const Header:React.FC<props> = (pathName) => {
         </Sheet>
       </div>
       <div className='ml-6 flex items-center sm:text-4xl font-bold'>
-        <h1>{pathName.pathName}</h1>
+        <h1>Transactions</h1>
       </div>
       <div className='flex items-center gap-4'>
         {/* Search input visible only on large screens */}
