@@ -13,7 +13,7 @@ import axios from 'axios';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Chat from '@/components/ui/chat';
 
-const Support = () => {
+const SupportView = () => {
   const initialValues = {
     text: '',
     sender: 'Your message is recieved',
@@ -204,4 +204,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default SupportView;

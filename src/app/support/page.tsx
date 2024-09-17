@@ -1,12 +1,12 @@
 
-import Support from '@/views/Support';
+import SupportView from '@/views/Support';
 import React from 'react';
 
 const page = () => {
   
   return (
     <div>
-      <Support />
+      <SupportView />
     </div>
   );
 };
