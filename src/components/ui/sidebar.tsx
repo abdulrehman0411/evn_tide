@@ -55,7 +55,7 @@ const Sidebar: React.FC = () => {
               <Link
                 className={`flex items-center rounded-lg px-3 py-2 ${!isSidebarOpen ? 'justify-center' : ''}`}
                 href={{
-                  pathname: '/dashboard',
+                  pathname: '/Dashboard',
                 }}
               >
                 <svg
@@ -142,7 +142,7 @@ const Sidebar: React.FC = () => {
               <Link
                 className={`flex items-center rounded-lg px-3 py-2 ${!isSidebarOpen ? 'justify-center' : ''}`}
                 href={{
-                  pathname: '/transaction',
+                  pathname: '/Transactions',
                 }}
               >
                 <svg
@@ -352,7 +352,7 @@ const Sidebar: React.FC = () => {
               <Link
                 className={`flex items-center rounded-lg px-3 py-2 ${!isSidebarOpen ? 'justify-center' : ''}`}
                 href={{
-                  pathname: '/support',
+                  pathname: '/Support',
                 }}
               >
                 <svg

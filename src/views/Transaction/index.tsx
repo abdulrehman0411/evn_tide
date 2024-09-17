@@ -33,11 +33,11 @@ import TransactionForm from '@/components/ui/form';
 const Transactions = () => {
   return (
     <div>
-      <div className='p-4 flex items-center justify-between'>
-        <div className='ml-4 mt-2 h-12 rounded-xl flex gap-4 items-center'>
+      <div className='p-4 flex items-center sm:justify-between justify-evenly'>
+        <div className=' mt-2 h-12 rounded-xl flex gap-4 items-center w-full ml-4 mr-4'>
           <DatePickerDemo />
           <Select>
-            <SelectTrigger className='w-[170px] bg-white'>
+            <SelectTrigger className='w-[185px] bg-white'>
               <SelectValue placeholder='Coin' />
             </SelectTrigger>
             <SelectContent>
@@ -47,7 +47,7 @@ const Transactions = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className='w-[150px] bg-white'>
+            <SelectTrigger className='w-[165px] bg-white'>
               <SelectValue placeholder='Status' />
             </SelectTrigger>
             <SelectContent>
@@ -60,12 +60,12 @@ const Transactions = () => {
 
         {/* Search input visible only on large screens */}
 
-        <div className='flex mr-4'>
+        <div className='sm:flex mr-4 hidden'>
           <Dialog>
             <DialogTrigger asChild>
               <Button
                 variant={'default'}
-                className='bg-indigo-900 rounded-lg lg:w-[215px] lg:ml-0 ml-2 h-12 font-normal'
+                className='bg-indigo-900 rounded-lg sm:w-[215px] lg:ml-0 ml-2 p-6 font-normal mt-1'
               >
                 <div className='flex items-center gap-2'>
                   <span>
@@ -91,7 +91,35 @@ const Transactions = () => {
           </Dialog>
         </div>
       </div>
-      <div className='ml-4 mt-2 mr-4'>
+      <div className='sm:hidden flex justify-center items-center'>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button
+              variant={'default'}
+              className='flex  bg-indigo-900 rounded-lg w-full ml-6 mr-6'
+            >
+              <div className='flex items-center gap-2'>
+                <span>
+                  <Plus />
+                </span>
+                <span className='text-white font-semibold text-lg'>
+                  Create Transaction
+                </span>
+              </div>
+            </Button>
+          </DialogTrigger>
+          <DialogContent className='sm:max-w-[500px]'>
+            <DialogHeader>
+              <DialogTitle className='text-2xl'>Create Transaction</DialogTitle>
+            </DialogHeader>
+
+            <TransactionForm />
+
+            <DialogFooter></DialogFooter>
+          </DialogContent>
+        </Dialog>
+      </div>
+      <div className='ml-6 mt-2 mr-6'>
         <div className='w-full max-w-full overflow-auto'>
           <Table className='table-auto w-full'>
             <TableHeader>

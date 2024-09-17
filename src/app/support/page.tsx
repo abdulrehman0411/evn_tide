@@ -1,12 +1,14 @@
-import Support from '@/views/Support'
-import React from 'react'
+
+import Support from '@/views/Support';
+import React from 'react';
 
 const page = () => {
+  
   return (
     <div>
-      <Support/>
+      <Support />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

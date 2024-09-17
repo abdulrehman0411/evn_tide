@@ -1,6 +1,6 @@
 import React from 'react';
-const DashBoard = () => {
+const DashBoardView = () => {
   return <div></div>;
 };
 
-export default DashBoard;
+export default DashBoardView;

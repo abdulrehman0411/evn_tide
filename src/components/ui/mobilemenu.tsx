@@ -32,7 +32,7 @@ const Mobilemenu = () => {
                 <Link
                   className={`flex items-center rounded-lg px-3 py-2`}
                   href={{
-                    pathname: '/dashboard',
+                    pathname: '/Dashboard',
                   }}
                 >
                   <svg
@@ -115,7 +115,7 @@ const Mobilemenu = () => {
                 <Link
                   className={`flex items-center rounded-lg px-3 py-2 `}
                   href={{
-                    pathname: '/transaction',
+                    pathname: '/Transactions',
                   }}
                 >
                   <svg
@@ -314,7 +314,7 @@ const Mobilemenu = () => {
               >
                 <Link
                   className={`flex items-center rounded-lg px-3 py-2 $`}
-                  href='/support'
+                  href='/Support'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

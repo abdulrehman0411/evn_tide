@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <Link
         href={{
-          pathname: '/dashboard',
+          pathname: '/Dashboard',
         }}
       >
         Route to DashBoard Page
