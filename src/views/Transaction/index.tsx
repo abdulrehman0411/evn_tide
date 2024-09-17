@@ -34,10 +34,10 @@ const Transactions = () => {
   return (
     <div>
       <div className='p-4 flex items-center sm:justify-between justify-evenly'>
-        <div className=' mt-2 h-12 rounded-xl flex gap-4 items-center w-full ml-4 mr-4'>
+        <div className=' mt-2 h-12 rounded-xl flex gap-4 items-center max-w-full sm-ml-6 sm-mr-6'>
           <DatePickerDemo />
           <Select>
-            <SelectTrigger className='w-[185px] bg-white'>
+            <SelectTrigger className='max-w-[185px] bg-white'>
               <SelectValue placeholder='Coin' />
             </SelectTrigger>
             <SelectContent>
@@ -47,7 +47,7 @@ const Transactions = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className='w-[165px] bg-white'>
+            <SelectTrigger className='max-w-[165px] bg-white'>
               <SelectValue placeholder='Status' />
             </SelectTrigger>
             <SelectContent>
@@ -96,7 +96,7 @@ const Transactions = () => {
           <DialogTrigger asChild>
             <Button
               variant={'default'}
-              className='flex  bg-indigo-900 rounded-lg w-full ml-6 mr-6'
+              className='flex  bg-indigo-900 rounded-lg max-w-full ml-6 mr-6'
             >
               <div className='flex items-center gap-2'>
                 <span>
@@ -120,7 +120,7 @@ const Transactions = () => {
         </Dialog>
       </div>
       <div className='ml-6 mt-2 mr-6'>
-        <div className='w-full max-w-full overflow-auto'>
+        <div className='max-w-full overflow-auto'>
           <Table className='table-auto w-full'>
             <TableHeader>
               <TableRow>
