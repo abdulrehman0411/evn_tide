@@ -10,5 +10,9 @@
   {
     "text": "hey",
     "sender": "Your message is recieved"
+  },
+  {
+    "text": "HELLO",
+    "sender": "Your message is recieved"
   }
 ]
