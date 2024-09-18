@@ -1,4 +1,4 @@
-import DashBoardView from '@/views/Dashboard';
+import DashBoardView from '@/views/DashboardView';
 import React from 'react';
 
 const page = () => {

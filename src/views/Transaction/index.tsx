@@ -157,8 +157,10 @@ const Transactions = () => {
                     <TableCell className='px-2 py-3 text-left'>
                       {invoice.amount}
                     </TableCell>
-                    <TableCell className='px-2 py-3 text-left'>
-                      {invoice.status}
+                    <TableCell className='px-2 py-3 text-left '>
+                      <p className='text-emerald-400 '>
+                        {invoice.status}
+                      </p>
                     </TableCell>
                   </TableRow>
                 ))}

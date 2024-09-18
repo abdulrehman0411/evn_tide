@@ -14,21 +14,19 @@ const inter = Inter({ subsets: ['latin'] });
 // };
 
 export default function RootLayout({
-  
   children,
 }: {
   children: React.ReactNode;
-  
 }) {
   let pathName = usePathname();
-  pathName = pathName.slice(1,pathName.length);
+  pathName = pathName.slice(1, pathName.length);
   return (
     <html lang='en'>
       <body className={`bg-slate-200`}>
         <div className='flex h-screen'>
           <Sidebar />
           <div className='flex-1 flex flex-col'>
-            <Header pathName={pathName}/>
+            <Header pathName={pathName} />
             <main className='flex-1 overflow-y-auto'>
               <Providers>{children}</Providers>
             </main>

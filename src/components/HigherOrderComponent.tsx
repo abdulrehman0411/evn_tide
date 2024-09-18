@@ -1,6 +1,6 @@
 'use client';
 
-import DashBoard from '@/views/Dashboard';
+import DashBoard from '@/views/DashboardView';
 import { useRouter } from 'next/router';
 // React Imports
 import React, { FC, Fragment, ReactNode, useEffect, useState } from 'react';

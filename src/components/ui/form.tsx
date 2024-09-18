@@ -51,7 +51,9 @@ const TransactionForm = () => {
             value={formik.values.name}
           />
           {formik.errors.name && formik.touched.name ? (
-            <p className='text-red-500 text-xs '>{formik.errors.name}</p>
+            <p className='text-red-500 text-sm col-span-6 ml-2'>
+              {formik.errors.name}
+            </p>
           ) : null}
         </div>
         <div className='grid grid-cols-6 items-center gap-2'>
@@ -72,7 +74,7 @@ const TransactionForm = () => {
             value={formik.values.amount}
           />
           {formik.errors.amount && formik.touched.amount ? (
-            <p className='text-red-500 text-xs '>{formik.errors.amount}</p>
+            <p className='text-red-500 text-sm col-span-6 ml-2 '>{formik.errors.amount}</p>
           ) : null}
           <select
             onChange={formik.handleChange}
@@ -89,7 +91,7 @@ const TransactionForm = () => {
           </select>
           <input />
           {formik.errors.coin && formik.touched.coin ? (
-            <p className='text-red-500 text-xs '>{formik.errors.coin}</p>
+            <p className='text-red-500 text-sm col-span-6 ml-2 '>{formik.errors.coin}</p>
           ) : null}
         </div>
         <div className='grid grid-cols-6 items-center gap-2'>
@@ -103,7 +105,7 @@ const TransactionForm = () => {
             id='note'
             name='note'
             type='text'
-            placeholder='0'
+            placeholder='Enter Note'
             autoComplete='given-note'
             className='col-span-6 py-4 bg-slate-200 pl-3 rounded-xl'
             onChange={formik.handleChange}

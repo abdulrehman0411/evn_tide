@@ -1,5 +1,5 @@
 
-import SupportView from '@/views/Support';
+import SupportView from '@/views/SupportView';
 import React from 'react';
 
 const page = () => {
